@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #202020;
+}
+
+img{
+    position: relative;
+    width: 700px;
+    height: 600px;
+    object-fit: cover;
+    animation: animacion 20s infinite;
+}
+
+@keyframes animacion{
+    0% {top: 0; left: 0;}
+    25% {top: 0; left: -710px}
+    50% {top: -610px; left: -710px;}
+    75% {top: -610px; left: 0px;}
+    100% {top: 0; left: 0;}
+}
+
+.cont{
+    margin: 10px;
+    width: 704px;
+    height: 604px;
+    overflow: hidden;
+}
+
+.carousel{
+    position: relative;
+    width: 1412px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+}
